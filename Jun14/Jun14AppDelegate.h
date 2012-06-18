@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Jun14View;
 
-@interface Jun14AppDelegate : UIResponder <UIApplicationDelegate>
+
+// this class conforms to the UIApplicationDelegate protocol
+//to receive notifications from UIApplication by it calling the protocol
+// methods implemented in this class
+
+@interface Jun14AppDelegate : UIResponder <UIApplicationDelegate> {
+    Jun14View *view1;
+    Jun14View *view2; 
+    UIWindow *_window;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

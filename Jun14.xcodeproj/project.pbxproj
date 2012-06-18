@@ -13,6 +13,7 @@
 		97478BCF158A5FC50024B51A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97478BCD158A5FC50024B51A /* InfoPlist.strings */; };
 		97478BD1158A5FC50024B51A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97478BD0158A5FC50024B51A /* main.m */; };
 		97478BD5158A5FC50024B51A /* Jun14AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97478BD4158A5FC50024B51A /* Jun14AppDelegate.m */; };
+		97478BDD158A793F0024B51A /* Jun14View.m in Sources */ = {isa = PBXBuildFile; fileRef = 97478BDC158A793F0024B51A /* Jun14View.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		97478BC4158A5FC50024B51A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		97478BC6158A5FC50024B51A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		97478BC8158A5FC50024B51A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		97478BCC158A5FC50024B51A /* Jun14-Info.plist */ = {isa = PBXFileReference; path = "Jun14-Info.plist"; sourceTree = "<group>"; };
+		97478BCC158A5FC50024B51A /* Jun14-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jun14-Info.plist"; sourceTree = "<group>"; };
 		97478BCE158A5FC50024B51A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		97478BD0158A5FC50024B51A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		97478BD2158A5FC50024B51A /* Jun14-Prefix.pch */ = {isa = PBXFileReference; path = "Jun14-Prefix.pch"; sourceTree = "<group>"; };
-		97478BD3158A5FC50024B51A /* Jun14AppDelegate.h */ = {isa = PBXFileReference; path = Jun14AppDelegate.h; sourceTree = "<group>"; };
+		97478BD2158A5FC50024B51A /* Jun14-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jun14-Prefix.pch"; sourceTree = "<group>"; };
+		97478BD3158A5FC50024B51A /* Jun14AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jun14AppDelegate.h; sourceTree = "<group>"; };
 		97478BD4158A5FC50024B51A /* Jun14AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jun14AppDelegate.m; sourceTree = "<group>"; };
+		97478BDB158A793F0024B51A /* Jun14View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jun14View.h; sourceTree = "<group>"; };
+		97478BDC158A793F0024B51A /* Jun14View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jun14View.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			children = (
 				97478BD3158A5FC50024B51A /* Jun14AppDelegate.h */,
 				97478BD4158A5FC50024B51A /* Jun14AppDelegate.m */,
+				97478BDB158A793F0024B51A /* Jun14View.h */,
+				97478BDC158A793F0024B51A /* Jun14View.m */,
 				97478BCB158A5FC50024B51A /* Supporting Files */,
 			);
 			path = Jun14;
@@ -154,6 +159,7 @@
 			files = (
 				97478BD1158A5FC50024B51A /* main.m in Sources */,
 				97478BD5158A5FC50024B51A /* Jun14AppDelegate.m in Sources */,
+				97478BDD158A793F0024B51A /* Jun14View.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
