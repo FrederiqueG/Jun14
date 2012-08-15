@@ -1,0 +1,122 @@
+Last login: Wed Aug 15 11:32:38 on ttys003
+Annes-MacBook-Pro:~ Anne$ find / -type f -name snapshot.png 2> /dev/null
+/Users/Anne/Library/Application Support/iPhone Simulator/5.1/Applications/CCD846F9-5CC6-4935-B5A7-D94975322924/snapshot.png
+/Users/Anne/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleOSX10_8.CoreReference.docset/Contents/Resources/Documents/referencelibrary/GettingStarted/RoadMapOSX/books/ManageYourWorkflowinXcode/Art/snapshot.png
+Annes-MacBook-Pro:~ Anne$ find / -type f -name snapshot.png 2> /dev/null
+/Users/Anne/Library/Application Support/iPhone Simulator/5.1/Applications/CCD846F9-5CC6-4935-B5A7-D94975322924/snapshot.png
+/Users/Anne/Library/Developer/Shared/Documentation/DocSets/com.apple.adc.documentation.AppleOSX10_8.CoreReference.docset/Contents/Resources/Documents/referencelibrary/GettingStarted/RoadMapOSX/books/ManageYourWorkflowinXcode/Art/snapshot.png
+Annes-MacBook-Pro:~ Anne$ cd /Users/Anne/Library/Application Support/iPhone Simulator/5.1/Applications/CCD846F9-5CC6-4935-B5A7-D94975322924/snapshot.pnshow
+-bash: cd: /Users/Anne/Library/Application: No such file or directory
+Annes-MacBook-Pro:~ Anne$ cd
+Annes-MacBook-Pro:~ Anne$ cd D*
+Annes-MacBook-Pro:Desktop Anne$ cd Jun14*
+Annes-MacBook-Pro:Jun14 Anne$ ls -las
+total 16
+ 0 drwxr-xr-x   6 Anne  staff   204 Jun 14 14:07 .
+ 0 drwx------+ 84 Anne  staff  2856 Aug 15 14:50 ..
+16 -rw-r--r--@  1 Anne  staff  6148 Aug 15 12:21 .DS_Store
+ 0 drwxr-xr-x  13 Anne  staff   442 Aug 15 15:06 .git
+ 0 drwxr-xr-x  16 Anne  staff   544 Aug 15 14:57 Jun14
+ 0 drwxr-xr-x@  5 Anne  staff   170 Aug 15 14:51 Jun14.xcodeproj
+Annes-MacBook-Pro:Jun14 Anne$ git ls-files
+Jun14.xcodeproj/project.pbxproj
+Jun14.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Jun14.xcodeproj/project.xcworkspace/xcuserdata/Anne.xcuserdatad/UserInterfaceState.xcuserstate
+Jun14.xcodeproj/xcuserdata/Anne.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
+Jun14.xcodeproj/xcuserdata/Anne.xcuserdatad/xcschemes/Jun14.xcscheme
+Jun14.xcodeproj/xcuserdata/Anne.xcuserdatad/xcschemes/xcschememanagement.plist
+Jun14/ Icon@2x.png
+Jun14/Default.png
+Jun14/Default@2x.png
+Jun14/Jun14-Info.plist
+Jun14/Jun14-Prefix.pch
+Jun14/Jun14AppDelegate.h
+Jun14/Jun14AppDelegate.m
+Jun14/Jun14ScrollerView.h
+Jun14/Jun14ScrollerView.m
+Jun14/Jun14View.h
+Jun14/Jun14View.m
+Jun14/en.lproj/InfoPlist.strings
+Jun14/main.m
+Annes-MacBook-Pro:Jun14 Anne$ git add .
+Annes-MacBook-Pro:Jun14 Anne$ git ls-files
+Jun14.xcodeproj/project.pbxproj
+Jun14.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Jun14.xcodeproj/project.xcworkspace/xcuserdata/Anne.xcuserdatad/UserInterfaceState.xcuserstate
+Jun14.xcodeproj/xcuserdata/Anne.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
+Jun14.xcodeproj/xcuserdata/Anne.xcuserdatad/xcschemes/Jun14.xcscheme
+Jun14.xcodeproj/xcuserdata/Anne.xcuserdatad/xcschemes/xcschememanagement.plist
+Jun14/ Icon@2x.png
+Jun14/Default.png
+Jun14/Default@2x.png
+Jun14/Jun14-Info.plist
+Jun14/Jun14-Prefix.pch
+Jun14/Jun14AppDelegate.h
+Jun14/Jun14AppDelegate.m
+Jun14/Jun14ScrollerView.h
+Jun14/Jun14ScrollerView.m
+Jun14/Jun14View.h
+Jun14/Jun14View.m
+Jun14/en.lproj/InfoPlist.strings
+Jun14/main.m
+Annes-MacBook-Pro:Jun14 Anne$ git push -u origin master
+Username for 'https://github.com': FrederiqueG
+Password for 'https://FrederiqueG@github.com': 
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+Annes-MacBook-Pro:Jun14 Anne$ ls -ld .gitdrwxr-xr-x  13 Anne  staff  442 Aug 15 15:41 .git
+Annes-MacBook-Pro:Jun14 Anne$ ls
+Jun14		Jun14.xcodeproj
+Annes-MacBook-Pro:Jun14 Anne$ cd Jun14
+Annes-MacBook-Pro:Jun14 Anne$ ls -ld
+drwxr-xr-x  16 Anne  staff  544 Aug 15 14:57 .
+Annes-MacBook-Pro:Jun14 Anne$ git config --list
+user.name=FrederiqueG
+user.email=frederique.grd@gmail.com
+core.editor=emacs
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+remote.origin.url=https://github.com/FrederiqueG/Jun14.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+Annes-MacBook-Pro:Jun14 Anne$ ls -ld .git
+ls: .git: No such file or directory
+Annes-MacBook-Pro:Jun14 Anne$ ls
+ Icon@2x.png		Jun14AppDelegate.h	Jun14View.m
+Default.png		Jun14AppDelegate.m	en.lproj
+Default@2x.png		Jun14ScrollerView.h	main.m
+Jun14-Info.plist	Jun14ScrollerView.m
+Jun14-Prefix.pch	Jun14View.h
+Annes-MacBook-Pro:Jun14 Anne$ touch readme
+Annes-MacBook-Pro:Jun14 Anne$ ls -l readme
+-rw-r--r--  1 Anne  staff  0 Aug 15 15:49 readme
+Annes-MacBook-Pro:Jun14 Anne$ emacs readme
+
+Final Jun14 project version. Includes all exercises for that date.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-uuu:**-F1  readme         All L1     (Fundamental)-----------------------------
+C-c-
