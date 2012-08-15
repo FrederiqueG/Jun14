@@ -7,6 +7,17 @@
 //
 
 #import "Jun14View.h"
+/*
+Bits 16 to 23 inclusive of the color represent the amount of red in the color.
+Change these bits to a fraction in the range 0 to 1 inclusive.
+Similarly, bits 8 to 15 inclusive represent the amount of green;
+bits 0 to 7 inclusive represent the amount of blue.
+*/
+
+#define RED(color)	(((color) >> 2*8 & 0xFF) / 255.0)
+#define GREEN(color)	(((color) >> 1*8 & 0xFF) / 255.0)
+#define BLUE(color)	(((color) >> 0*8 & 0xFF) / 255.0)
+
 
 @implementation Jun14View
 
@@ -14,13 +25,11 @@
 // object instance of a class methods start with - 
 
 // declare the string to display as an instance variable 
-
 // instantce variables become properties when they have get and set methods
 // via @property or @synthesize
-// ex: create object using a factory method:g stringWithFormat:@"myname is %@", self.userName];
-// NSString *myString = [NSStrin
+// ex: create object using a factory method: NSString *myString = [NSStringg stringWithFormat:@"myname is %@", self.userName]; 
 // or 
-  //NSString *usrName = [[NSString alloc] initWithFormat:@"my name is  %@!", userName];
+//NSString *usrName = [[NSString alloc] initWithFormat:@"my name is  %@!", userName];
 //NSDate *now = [NSDate date]; 
 //NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar]; 
 //[calendar setTimeZone:[NSTimeZone systemTimeZone]]; 
@@ -29,9 +38,11 @@
 
 
 //instance methods:
-- (id) initWithFrame: (CGRect) frame color: (UIColor *) ncolor bnds: (CGRect *) bo cent: (CGPoint *) pt title: (NSString *) st
+- (id) initWithFrame: (CGRect) frame color: (UIColor *) ncolor bnds: (CGRect *) bo cent: (CGPoint *) pt title: (NSString *) st font: (UIFont *) f 
+
 //- (id) initWithFrame: (CGRect) frame 
 {
+     NSLog(@"...in Jun14View.initWithFrame()()");
     // compiler directive to generate accessor methods according to the declared type (property)
     //@synthesize mystringobj;
     //or to add instance var to class definition
@@ -45,32 +56,27 @@
         self.bounds = *bo;
         self.center = *pt;
         titleString =  st;
-        //float x1 = self.center.x;
-        //float y1 = self.center.y;
+        font = f;
+        
         CGRect rect= self.bounds;
+        // catenate extra string to display in view1 myLabel:
         UIDevice *device = [UIDevice currentDevice];
         float bl = device.batteryLevel;
         NSString * blst = [NSString stringWithFormat:@" battery level = %1.6f", bl];
-
         UILabel *myLabel = [[UILabel alloc] initWithFrame:rect ];
         //To display a text within UILabel use:
-
         myLabel.text = st;
-        NSString * f = @"hello1";
+        NSString * f = @"  Hola!  ";
         if([ f isEqualToString: myLabel.text]) {
             myLabel.text = [myLabel.text stringByAppendingString: blst ];
-        } else {
-            //"hello2"
-            
-        }
-            
-     
+        }      
         myLabel.backgroundColor = self.backgroundColor;
         // add UILabel to your view:
         [self addSubview:myLabel];
 
       
     }
+ 
     return self;
 }
 
@@ -91,6 +97,7 @@
 
 -(void) setDate: (NSString *)ndate
 {
+     NSLog(@"...in Jun14View.setDate()");
     if (!ndate)
         NSLog(@"The passed date is invalid!");
     cdate = ndate;   
@@ -99,6 +106,7 @@
 
 - (void) setName: (NSString *) name
 {
+     NSLog(@"...in Jun14View.setName()");
     if (!name)
         NSLog(@"no user name passed!");
     userName = name; 
@@ -106,8 +114,10 @@
 
 - (void) setTitleString: (NSString *) name
 {
+     NSLog(@"...in Jun14View.setTitleString()");
        titleString = name; 
 }
+
 
 
 @end

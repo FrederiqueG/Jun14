@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 @class Jun14View;
+@class Jun14ScrollerView;
 
+extern NSString * str1;
+extern NSString * str2;
 
 // this class conforms to the UIApplicationDelegate protocol
 //to receive notifications from UIApplication by it calling the protocol
@@ -16,8 +19,9 @@
 
 @interface Jun14AppDelegate : UIResponder <UIApplicationDelegate> {
     Jun14View *view1;
-    Jun14View *view2; 
+    Jun14ScrollerView *view2;
     UIWindow *_window;
+    
 }
 
 @property (strong, nonatomic) UIWindow *window;

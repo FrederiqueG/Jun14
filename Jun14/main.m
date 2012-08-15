@@ -10,10 +10,18 @@
 
 #import "Jun14AppDelegate.h"
 
+// stock ticker to display:
+NSString * stock_ticker = @"IBM";
+NSString * qurl_part1= @"http://finance.yahoo.com/d/quotes.csv?s=";
+NSString * qurl_part2= @"&f=sl1t1";
+NSString * str2 = @"  Hello! stock quote for ";
+NSString * str1 = @"  Hola!  ";
+
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
         NSLog(@"Entering Jun14 main.m.");
+        
         //There is only one object of class UIDevice, and it already
 		//exists.  Get the address of this singleton object.
 		UIDevice *device = [UIDevice currentDevice];
@@ -32,13 +40,12 @@ int main(int argc, char *argv[])
               bounds.size.width, bounds.size.height
               );
        
-		NSLog(@"IOs simulator: can print device id= %g but NOT the device unique identifier", devId );
-       // or:
-        //[window initWithFrame: [[UIScreen mainScreen] bounds]];
-        //called by main. creates the application and the application delegate
-        //CGRect  viewRect = CGRectMake(10, 10, 100, 100);
-        //UIView* myView = [[UIView alloc] initWithFrame:viewRect];
-        // pass NSdate object as one of the strings passed to one of the subviews
+		NSLog(@"IOs simulator: can print device id= %g but NOT the device unique identifier", devId );        
+        
+        //Two ways to do the same thing.  description returns an NSString.
+        NSLog(@"Simulated device is %@.", [device description]);
+        NSLog(@"or: %@.\n\n", devId);
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([Jun14AppDelegate class]));
     }
 }

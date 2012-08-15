@@ -1,3 +1,4 @@
+
 //
 //  Jun14View.h
 //  Jun14
@@ -11,7 +12,12 @@
 
 @interface Jun14View: UIView
 {
-    // instance variables: s
+    // instance variables: 
+    //in the file View.h, inside the curly braces
+	NSString *string;
+	CGPoint point;
+	UIFont *font;
+    
     ////@property (nonatomic, copy) NSString *userName;
     NSString *userName; //static type
     NSString *titleString;  //static type
@@ -19,6 +25,9 @@
     //Font
     //background color;
 }
+
+
+@property (nonatomic, copy) NSString *string;
 
 // - :  method type identifier = instance method
 // getters:
@@ -37,8 +46,8 @@
 
 //others
 // id is the dynamic object type
-- (id) initWithFrame: (CGRect) frame color: (UIColor *) col bnds: (CGRect *)bo cent: (CGPoint *) p  title: (NSString *) s;
-//- (id) initWithFrame: (CGRect) frame color:(UIColor *) col;
+- (id) initWithFrame: (CGRect) frame color: (UIColor *) col bnds: (CGRect *)bo cent: (CGPoint *) p  title: (NSString *) s font: (UIFont *) f;
+
 - (void) drawRect: (CGRect) rect ;
 
 @end
