@@ -10,6 +10,8 @@
 		9706D60415DC4BA70069AA24 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 9706D60315DC4BA70069AA24 /* Icon-72.png */; };
 		9706D60615DC4BB90069AA24 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9706D60515DC4BB90069AA24 /* Icon-72@2x.png */; };
 		9706D60815DC4BD20069AA24 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9706D60715DC4BD20069AA24 /* Icon.png */; };
+		9706D61A15DC5B230069AA24 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9706D61815DC5B230069AA24 /* Localized.strings */; };
+		9706D62615DC766D0069AA24 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9706D62515DC766D0069AA24 /* Localized.strings */; };
 		97478BC5158A5FC50024B51A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97478BC4158A5FC50024B51A /* UIKit.framework */; };
 		97478BC7158A5FC50024B51A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97478BC6158A5FC50024B51A /* Foundation.framework */; };
 		97478BC9158A5FC50024B51A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97478BC8158A5FC50024B51A /* CoreGraphics.framework */; };
@@ -27,6 +29,8 @@
 		9706D60315DC4BA70069AA24 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		9706D60515DC4BB90069AA24 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		9706D60715DC4BD20069AA24 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		9706D61915DC5B230069AA24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localized.strings; sourceTree = "<group>"; };
+		9706D62515DC766D0069AA24 /* Localized.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localized.strings; sourceTree = "<group>"; };
 		97478BC0158A5FC50024B51A /* Jun14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jun14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97478BC4158A5FC50024B51A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		97478BC6158A5FC50024B51A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9706D60915DC54920069AA24 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				9706D61815DC5B230069AA24 /* Localized.strings */,
+			);
+			name = en.lproj;
+			sourceTree = "<group>";
+		};
+		9706D62415DC76090069AA24 /* ar.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				9706D62515DC766D0069AA24 /* Localized.strings */,
+			);
+			name = ar.lproj;
+			sourceTree = "<group>";
+		};
 		97478BB5158A5FC50024B51A = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +116,8 @@
 				97478BD4158A5FC50024B51A /* Jun14AppDelegate.m */,
 				97478BDB158A793F0024B51A /* Jun14View.h */,
 				97478BDC158A793F0024B51A /* Jun14View.m */,
+				9706D62415DC76090069AA24 /* ar.lproj */,
+				9706D60915DC54920069AA24 /* en.lproj */,
 				97478BCB158A5FC50024B51A /* Supporting Files */,
 			);
 			path = Jun14;
@@ -176,6 +198,8 @@
 				9706D60415DC4BA70069AA24 /* Icon-72.png in Resources */,
 				9706D60615DC4BB90069AA24 /* Icon-72@2x.png in Resources */,
 				9706D60815DC4BD20069AA24 /* Icon.png in Resources */,
+				9706D61A15DC5B230069AA24 /* Localized.strings in Resources */,
+				9706D62615DC766D0069AA24 /* Localized.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +220,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9706D61815DC5B230069AA24 /* Localized.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9706D61915DC5B230069AA24 /* en */,
+			);
+			name = Localized.strings;
+			sourceTree = "<group>";
+		};
 		97478BCD158A5FC50024B51A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
